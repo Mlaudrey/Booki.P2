@@ -57,13 +57,20 @@ a {
 
 
 /*header*/
+header {
+    top: 0;
+    width: 1440px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
 
 .header {
     width: 100%;
     height: 79px;
     display: flex;
     justify-content:space-between;   
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -95,7 +102,7 @@ a {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-left: 50px;
+    padding: 25px;
 }
 
 
@@ -125,13 +132,20 @@ a {
 }
 
 /*body*/
+main {
+    display: flex;
+    justify-content: center;
+   
+}
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
     margin-top: 50px;
+    padding-left: 25px;
+    padding-right: 25px;
+   
 }
 
 /*info_group*/
@@ -140,6 +154,7 @@ a {
     width: 1340px;
     height: 281px;
     gap: 35px;
+    margin-top: -10px;
 }
   
 /*headline*/
@@ -621,10 +636,11 @@ h6 {
 }
 
 .frame14 {
-    width: 1280px;
+    width: 1340px;
     height: 559.02px;
     display: flex;
     justify-content: center;
+    gap: 30px;
 }
 
 .frame14 a {
@@ -669,13 +685,21 @@ h6 {
 }
 
 /*footer*/
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
 
 .footer {
+    width: 1440px;
     height: 163px;
     list-style: none;
     font-size: 16px;
     margin-top: 5px;
     display: flex;
+    justify-content:flex-start;
     background-color: #DEEBFF;
 }
 
@@ -696,6 +720,7 @@ h6 {
     flex-direction: column;
     justify-content: left;
     row-gap: 15px;
+    list-style-type: none;
 }
 
 .footer h7 {
@@ -720,6 +745,10 @@ footer a {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+    footer {
+        width: 100%;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -754,14 +783,33 @@ footer a {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    header, main, footer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }
 
 /*Large devices (Desktop, more than 1440px)*/
 @media screen and (min-width: 1440px)  {
-    head, body {
+    header, body, footer {
     padding-left: calc((100% - 1440px) /2);/*calculer la marge blanche à gauche*/
     padding-right: calc((100% - 1440px) /2);/*calculer la marge blanche à droite*/
 }
     
+}
+
+/*Normal devices (max-width: 1440px)*/
+@media screen and (max_width: 1439.98px) {
+    header, footer {
+        width: 100%;
+    }
+
+    header {
+        top: 0;
+    }
+
+    footer {
+        bottom: 0;
+     }
 }
