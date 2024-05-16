@@ -14,12 +14,17 @@
     color: var(--main-color);
 }
 
+body {
+    margin: 0;
+    width: 100%;
+    
+}
+
 main {
     display: flex;
     justify-content: center;
     height: 1700px;
 }
-
 
 a {
     color: inherit;
@@ -57,61 +62,49 @@ a {
 
 
 /*header*/
-header {
-    top: 0;
-    width: 1440px;
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-}
 
-.header {
+
+.barre-navigation {
     width: 100%;
     height: 79px;
-    display: flex;
-    justify-content:space-between;   
-    align-items: center;
-}
-
-
-.barre-navigation ul{
-    width: 344px;
-    height: 35px;
     display: flex;   
     align-items: center;
     justify-content: space-between;
     color: black;
     list-style-type: none;
     padding: 0;
-    margin-top: -10px;
+    margin-top: 0;
 }
 
-.barre-navigation ul li {
-    display: inline-block;
-    margin-left: 20px;
-}
-
-.barre-navigation ul li:first-child{
-    margin-left: 0;/*pas de marge à gauche pour le premier element*/
-}
-
-.logo-reservia {
-    width: 169.09;
+.logo {
+    width: 169.09px;
     height:79px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 25px;
 }
 
+.logo img {
+    width: 61.09px; 
+    height: 19px;
 
-.liens1 {
+}
+
+.liens {
+    display: flex;
+    justify-content: space-between;
+    width: 344px;
+    height: 79px;
+    
+}
+
+.sizelien1 {
     width: 113px;
     height: 35px;
 }
 
-.liens2 {
+.sizelien2 {
     width: 63px;
     height: 35px;
 }
@@ -132,20 +125,12 @@ header {
 }
 
 /*body*/
-main {
-    display: flex;
-    justify-content: center;
-   
-}
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    margin-top: 50px;
-    padding-left: 25px;
-    padding-right: 25px;
-   
+    margin-top: 50px; 
 }
 
 /*info_group*/
@@ -201,7 +186,7 @@ main {
     width: 50px;
     height: 49px;
     border-radius: 15px 0px 0px 15px;
-    border: 1px 0px 0px 0px;
+    border: 1px 0px 0px;
     background-color: #F2F2F2;
 }
 
@@ -223,7 +208,7 @@ main {
     width: 50px;
     height: 49px;
     border-radius: 15px 0px 0px 15px;
-    border: 1px 0px 0px 0px;
+    border: 1px 0px 0px;
 }
 
 .recherche {
@@ -267,7 +252,7 @@ button {
     height: 49px;
     gap: 10px;
     border-radius: 0px 15px 15px 0px;
-    border: 1px 0px 0px 0px; 
+    border: 1px 0px 0px; 
 }
 
 #searchbutton {
@@ -299,10 +284,16 @@ button {
     text-align: center;
   
 }
+.filters {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
 
 .filterbar .babyfiltre {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 50px;
     font-weight: bold;
 }
@@ -311,9 +302,12 @@ h2 {
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
-    text-align: baseline;
     width: 54px;
     height: 21px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 0,
 }
 
 .E {
@@ -323,7 +317,6 @@ h2 {
     gap: 10px;
     border-radius: 25px;
     border: 2px solid #d9d9d9;   
-    text-align: center;
 }
 
 .F {
@@ -380,6 +373,7 @@ i.mon-icon.fa-solid::before {
     font-size: 17px;
     font-weight: 700;
     line-height: 19.96px;
+    text-align: left;
     width: 103px;
     height: 20px;
 }
@@ -442,10 +436,11 @@ i.mon-icon.fa-solid::before {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
-    width: 1340px;
+    width: 100%;
     height: 614px;
     gap: 40px;
     margin-top: 40px;
+    position: relative;
    
 }
 
@@ -454,7 +449,7 @@ i.mon-icon.fa-solid::before {
     border-radius: 20px;
     padding: 30px;
     box-sizing: border-box;
-
+    
 }
 
 /****** Hebergements ***********/
@@ -464,17 +459,14 @@ i.mon-icon.fa-solid::before {
     font-weight: 700;
     line-height: 25.83;
     height: 26px;
-    margin: 0;  
+    margin: 0;
+    display: flex;
+    align-items: center;  
 }
 
-.hebergements h3 {
-    display: flex;
-    align-items: center;
-    height: 26px;
-}
 
 .hebergements {  
-    width: 871px;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -521,7 +513,7 @@ i.mon-icon.fa-solid::before {
 }
 
 .frame16 .card-txt {
-    width: 245px;
+    width: 235px;
     height: 88px;
     font-size: 16px;
     padding-left: 10px;
@@ -534,7 +526,7 @@ i.mon-icon.fa-solid::before {
 .hebergements .frame16 .card-title {
     font-weight: 700;
     line-height: 18.78px;
-    width: 245px;
+    width: 235px;
     height: 19px;
     font-size: 16px;
     margin-top: 5px;
@@ -626,13 +618,13 @@ h6 {
     text-align: left;
     color: black;
     display: flex;
-    padding-left: 20px;
+    padding-left: 30px;
     margin-bottom: 15px;
 }
 
 .Activités-à-Marseille  {
-    width: 1340px;
-    height: 559.02px;
+    width: 100%;
+    height: 559.02px;  
 }
 
 .frame14 {
@@ -641,11 +633,9 @@ h6 {
     display: flex;
     justify-content: center;
     gap: 30px;
+    padding-top: 20px;
 }
 
-.frame14 a {
-    margin: 0 10px;
-}
 
 .activité {
     width: 297.5px;
@@ -682,37 +672,28 @@ h6 {
     text-align: left;
     color: black;
     margin-left: 20px;
+    padding-top: 10px;
 }
 
 /*footer*/
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
 
 .footer {
-    width: 1440px;
+    width: 100%;
     height: 163px;
     list-style: none;
     font-size: 16px;
-    margin-top: 5px;
     display: flex;
-    justify-content:flex-start;
-    background-color: #DEEBFF;
+    
+    justify-content: center;
+    background-color: #DEEBFF;    
 }
 
-.footer ul {
-    
-}
 .footer-section {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
-    width: 446.67px;
+    width: 439.67px;
     height: 163px;
-    padding: 20px 0px 0px 0px;
 }
 
 .footer-section ul {
@@ -721,12 +702,14 @@ footer {
     justify-content: left;
     row-gap: 15px;
     list-style-type: none;
+    margin: 0;
 }
 
-.footer h7 {
+.footer h3 {
     font-weight: bold;
     font-size: 18px;
     padding-left: 40px;
+    width: 50%;
 }
 
 .a-propos {
@@ -744,51 +727,238 @@ footer a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-    footer {
-        width: 100%;
+@media screen and (max-width: 1024px) and (min-width:768px) {
+
+    
+    body {
+        width: 1024px;
+        height: 2002.5px;
+        gap:30px;
+        
     }
 
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
+    /*header*/
+.barre-navigation {
+        width: 1024px;
+        height: 79px;
+        padding: 0px 0.31px 0px 0px;
+}
 
-    .hebergements {
-        width: 100%;
-    }
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-    }
+/*body*/
 
-    .frame16 {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+.main-container {
+    width: 100%;
+    max-width: 1440px;
+    box-sizing: border-box;
+    margin-top: 50px; 
+   flex-direction: column;
+   
+}
 
-    .frame16 a {
-        width: 30%;
-    }
+    
 
-    .frame16 .card-title {
-        font-size: 14px;
-    }
+.footer {
+width: 100%;
+}
 
-    .frame16 .card-subtitle {
-        font-size: 13px;
-    }
+
+.hebergements {
+width: 100%;
+
+}
+
+.populaires {
+width: 100%;
+margin-top: 50px;
+}
+
+.frame16 {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.frame16 a {
+width: 30%;
+}
+
+.frame16 .card-title {
+font-size: 14px;
+}
+
+.frame16 .card-subtitle {
+font-size: 13px;
+}
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    header, main, footer {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
+
+body {
+width: 100%;
+height: 4127.52px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+margin:0;
+padding: 0;
 }
+
+/*header*/
+
+.barre-navigation {
+    width: 100%;
+    height: 115px;
+    display: flex;   
+    align-items: center;
+    color: black;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.logo {
+        width: 121.09px;
+        height:79px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 30px 0px 0px 0px;
+   
+}
+
+
+.liens {
+    display: flex;
+    justify-content: space-around;
+    width: 375px;
+    height: 79px;
+    
+}
+
+.barre-navigation .bordure {
+    width: 187.5px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.bordure:hover {
+    border-bottom-color: blue;
+    color: #0065FC;
+}
+
+/*info-group*/
+
+.info-group{
+    width: 375px;
+    height: 432px;
+    padding: 0px 20px 0px 20px;
+    gap: 35px;
+    display: block;
+    justify-content: center;
+}
+
+.headline {
+    width: 335px;
+    height: 79px;
+}
+
+.headline h1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 335px;
+    height: 52px;  
+}
+
+.headline p {
+    width: 335px;
+    height: 19px;  
+}
+
+/*search-bar*/
+
+.search-bar {
+    width: 335px;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px solid #F2F2F2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    gap: 24px;   
+}
+
+/*filterbar*/
+
+.filterbar {
+    width: 335px;
+    height: 161px;
+    gap: 20px;
+    background: white;
+    border: 1px solid transparent;
+    margin-top: 35px;
+    display: flex;
+    text-align: center;  
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    width: 54px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin: 0,
+}
+
+
+
+/*herbergements and populaires*/
+
+.hebergements-and-populaires {
+    display: flex;
+   flex-direction: column;
+    width: 100%;
+    height: 614px;
+    gap: 40px;
+    margin-top: 40px;
+    
+}
+
+.hebergements {
+    width: 100%;
+}
+
+.populaires {
+    width: 100%
+}
+
+.frame14 {
+    width: 100%;
+    height: 559.02px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+
+}
+
+
 
 /*Large devices (Desktop, more than 1440px)*/
 @media screen and (min-width: 1440px)  {
@@ -801,8 +971,8 @@ footer a {
 
 /*Normal devices (max-width: 1440px)*/
 @media screen and (max_width: 1439.98px) {
-    header, footer {
-        width: 100%;
+    body {
+        margin: 0;
     }
 
     header {
