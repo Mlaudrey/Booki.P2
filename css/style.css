@@ -247,7 +247,7 @@ a {
   line-height: 21.13px;
   text-align: center;
   background-color: #0065fc;
-  color: #f2f2f2;
+  color: white;
   cursor: pointer;
   border-radius: 0px 15px 15px 0px;
   border-color: transparent;
@@ -593,21 +593,21 @@ h6 {
   list-style: none;
   font-size: 16px;
   display: flex;
-  justify-content: center;
-  background-color: #deebff;
+  justify-content: space-around;
+  background-color: #f2f2f2;
 }
 
 .footer-section {
-  display: flex;
-  flex-direction: column;
-  width: 439.67px;
+  width: 446.67px;
   height: 163px;
+  gap: 15px;
+  padding: 5px 0px 0px 20px;
 }
 
 .footer-section ul {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: center;
   row-gap: 15px;
   list-style-type: none;
   margin: 0;
@@ -620,12 +620,6 @@ h6 {
   padding-left: 40px;
   width: 50%;
   padding: 0;
-}
-
-.a-propos {
-  width: 446.67px;
-  height: 163px;
-  gap: 15px;
 }
 
 footer a {
@@ -1045,6 +1039,8 @@ footer a {
   html {
     display: flex;
     justify-content: center;
+    width: 375px;
+    height: auto;
   }
 
   body {
@@ -1094,7 +1090,6 @@ footer a {
 
   .main-container {
     width: 375px;
-    height: 3982.52px;
     gap: 35px;
     display: flex;
     flex-direction: column;
@@ -1103,7 +1098,7 @@ footer a {
   /*header*/
 
   .barre-navigation {
-    width: 335px;
+    width: 375px;
     height: 115px;
     display: flex;
     align-items: center;
@@ -1233,10 +1228,10 @@ footer a {
     margin-top: 35px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
   }
 
   .filters {
+    height: 130px;
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
@@ -1259,7 +1254,7 @@ footer a {
   #searchbutton {
     width: 54px;
   }
-  
+
   .infobar {
     width: 335px;
     height: 38px;
@@ -1271,7 +1266,7 @@ footer a {
     justify-content: center;
     font-size: 13px;
   }
-  
+
   .infobar i {
     border: 2px solid #deebff;
     width: 28px;
@@ -1281,7 +1276,7 @@ footer a {
     align-items: center;
     border-radius: 50px;
   }
-  
+
   /*herbergements and populaires*/
 
   .hebergements-and-populaires {
@@ -1290,11 +1285,10 @@ footer a {
     width: 375px;
     height: 2019.5px;
     gap: 15px;
-    margin-top: 40px;
+    margin: 0;
   }
 
   .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 20px;
     box-sizing: border-box;
     padding: 20px;
@@ -1348,7 +1342,9 @@ footer a {
     display: flex;
     flex-wrap: wrap;
   }
-
+  .hebergements-and-populaires .hebergements {
+    background-color: transparent;
+  }
   .hebergements-title h3 {
     font-size: 22px;
     font-weight: 700;
@@ -1400,13 +1396,13 @@ footer a {
   }
 
   .frame16 .card-txt {
-    width: 235px;
+    width: 335px;
     height: 88px;
     font-size: 16px;
-    padding-left: 10px;
+    padding-left: 25px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 5px;
+    gap: 8px;
   }
 
   .hebergements .frame16 .card-title {
@@ -1415,7 +1411,7 @@ footer a {
     width: 235px;
     height: 19px;
     font-size: 16px;
-    margin-top: 5px;
+    margin: 0;
   }
 
   .frame16 .card-subtitle {
@@ -1426,17 +1422,16 @@ footer a {
     font-size: 14px;
   }
 
-  p.card-subtitle .card-rating {
-    display: flex;
-    align-items: center;
+  .frame16 .card-rating {
+    margin: 0;
   }
 
   h4 {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
-    width: 811px;
-    height: 23px;
+    width: 335px;
+    height: 21px;
     text-align: left;
     display: flex;
     padding-bottom: 5px;
@@ -1450,7 +1445,7 @@ footer a {
   /*section activités*/
 
   h6 {
-    width: 1280px;
+    width: 315px;
     height: 30.02px;
     font-size: 22px;
     font-weight: 700;
@@ -1462,20 +1457,19 @@ footer a {
     margin-bottom: 15px;
   }
   .section-activité {
-    width: 100%;
-    height: 559.02px;
+    width: 375px;
   }
 
   .Activités-à-Marseille {
     width: 375px;
-    height: 965px;
-    padding: 30px;
+    height: 965.02px;
+    padding: 20px;
     gap: 30px;
   }
 
   .frame14 {
     width: 315px;
-    height: 885pxpx;
+    height: 885px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -1522,55 +1516,39 @@ footer a {
     text-align: left;
     padding-left: 15px;
   }
-}
 
-/*footer*/
+  /*footer*/
 
-.footer {
-  width: 375pxpx;
-  height: 461px;
-  list-style: none;
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  background-color: #deebff;
-  padding: 30px;
-  gap: 50px;
-}
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    height: 461px;
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 30px;
+    gap: 50px;
+  }
 
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  width: 439.67px;
-  height: 163px;
-}
+  .footer-section {
+    width: 263.67px;
+    height: 121px;
+    gap: 15px;
+  }
 
-.footer-section ul {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  row-gap: 15px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+  .footer-section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    row-gap: 15px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
-.footer h3 {
-  font-weight: bold;
-  font-size: 18px;
-  padding-left: 40px;
-  width: 50%;
-  padding: 0;
-}
-
-.a-propos {
-  width: 446.67px;
-  height: 163px;
-  gap: 15px;
-}
-
-footer a {
-  color: black;
 }
 
 /*Large devices (Desktop, more than 1440px)*/
