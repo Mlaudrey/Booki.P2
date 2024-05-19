@@ -1040,7 +1040,7 @@ footer a {
     display: flex;
     justify-content: center;
     width: 375px;
-    height: auto;
+    height: 4058px;
   }
 
   body {
@@ -1090,6 +1090,7 @@ footer a {
 
   .main-container {
     width: 375px;
+    height: 3600px;
     gap: 35px;
     display: flex;
     flex-direction: column;
@@ -1453,17 +1454,17 @@ footer a {
     text-align: left;
     color: black;
     display: flex;
-    padding-left: 30px;
-    margin-bottom: 15px;
+    margin-top: 30px;
+    margin-bottom: 0;
   }
   .section-activité {
     width: 375px;
+    padding: 20px;
   }
 
   .Activités-à-Marseille {
     width: 375px;
     height: 965.02px;
-    padding: 20px;
     gap: 30px;
   }
 
@@ -1472,8 +1473,6 @@ footer a {
     height: 885px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding-top: 20px;
   }
 
   .activité {
@@ -1526,7 +1525,6 @@ footer a {
     height: 461px;
     list-style: none;
     font-size: 16px;
-    display: flex;
     justify-content: center;
     background-color: #f2f2f2;
     padding: 30px;
@@ -1535,7 +1533,7 @@ footer a {
 
   .footer-section {
     width: 263.67px;
-    height: 121px;
+    height: 123px;
     gap: 15px;
   }
 
