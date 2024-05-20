@@ -16,6 +16,8 @@
 
 body {
   margin: 0;
+  padding-left: 3.5%;
+  width: 1440px;
 }
 
 a {
@@ -54,7 +56,7 @@ a {
 /*header*/
 
 .barre-navigation {
-  width: 100%;
+  width: 1440px;
   height: 79px;
   display: flex;
   align-items: center;
@@ -85,6 +87,7 @@ a {
   justify-content: space-around;
   width: 344px;
   height: 79px;
+  padding: 0px 50px 0px 50px;
 }
 
 .sizelien1 {
@@ -196,19 +199,14 @@ a {
   border: 1px 0px 0px;
 }
 
-.search {
+.input-search {
   width: 195px;
   height: 49px;
   border: none;
 }
 
-#city-input {
-  width: 200px;
-  padding: 10px;
-  font-size: 16px;
-}
 
-#city-input::placeholder {
+.input-search::placeholder {
   padding-left: 20px;
   color: black;
   font-weight: bold;
@@ -260,7 +258,7 @@ a {
 /*filterbar*/
 
 .filterbar {
-  width: 758px;
+  width: 820px;
   height: 50px;
   gap: 15px;
   background: white;
@@ -771,7 +769,6 @@ footer a {
     height: 50px;
     gap: 10px;
     border-radius: 25px 0px 0px 0px;
-    border: 2px 0px 0px 0px;
     margin-top: -15px;
   }
 
@@ -901,7 +898,6 @@ footer a {
     height: 390.02px;
     padding: 30px 0px 0px 0px;
     gap: 30px;
-    opacity: 0px;
   }
 
   .Activités-à-Marseille {
@@ -1036,18 +1032,12 @@ footer a {
     color: var(--main-color);
   }
 
-  html {
-    display: flex;
-    justify-content: center;
-    width: 375px;
-    height: 4058px;
-  }
-
   body {
     width: 375px;
     height: 4058.02px;
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
 
   main {
@@ -1180,7 +1170,7 @@ footer a {
     margin-top: 30px;
   }
 
-  .search {
+  .input-search {
     width: 236px;
     height: 21px;
     top: 14px;
@@ -1198,7 +1188,7 @@ footer a {
     width: 49px;
     height: 49px;
     border-radius: 15px;
-    border: 1px 0px 0px 0px;
+    border: 1px;
   }
 
   #searchbutton {
@@ -1207,7 +1197,7 @@ footer a {
     width: 49px;
     height: 49px;
     border-radius: 15px;
-    border: 1px 0px 0px 0px;
+    border: 1px;
   }
 
   #searchbutton::before {
@@ -1249,7 +1239,7 @@ footer a {
     width: 48%;
     height: 50px;
     border-radius: 25px;
-    border: 2px 0px 0px 0px;
+    border: 2px;
   }
 
   #searchbutton {
@@ -1389,7 +1379,7 @@ footer a {
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 0px, 15px, 0px, 15px;
+    padding: 0px 15px 0px 15px;
   }
 
   .frame16 .card {
@@ -1546,20 +1536,11 @@ footer a {
     margin: 0;
     padding: 0;
   }
-
 }
 
 /*Large devices (Desktop, more than 1440px)*/
 @media screen and (min-width: 1440px) {
-  body {
-    padding-left: calc(
-      (100% - 1440px) / 2
-    ); /*calculer la marge blanche à gauche*/
-    padding-right: calc(
-      (100% - 1440px) / 2
-    ); /*calculer la marge blanche à droite*/
-  }
-
+ 
   .barre-navigation {
     width: 100%;
     height: 79px;
@@ -1576,6 +1557,6 @@ footer a {
 
 @media screen and (min-widht: 1024px) and (max-width: 1440px) {
   .body {
-    max-width: 100%;
+    max-width: 1440px;
   }
 }
