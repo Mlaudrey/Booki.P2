@@ -205,7 +205,6 @@ a {
   border: none;
 }
 
-
 .input-search::placeholder {
   padding-left: 20px;
   color: black;
@@ -646,7 +645,9 @@ footer a {
 
   body {
     margin: 0;
-    width: 100%;
+    width: 1024px;
+    height: 2002.52px;
+    padding: 0;
   }
 
   main {
@@ -699,11 +700,6 @@ footer a {
     padding-left: 5%;
   }
   /*body*/
-
-  body {
-    width: 1024px;
-    height: 2002.52px;
-  }
 
   .main-container {
     width: 100%;
@@ -1540,7 +1536,6 @@ footer a {
 
 /*Large devices (Desktop, more than 1440px)*/
 @media screen and (min-width: 1440px) {
- 
   .barre-navigation {
     width: 100%;
     height: 79px;
