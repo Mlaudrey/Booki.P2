@@ -750,7 +750,7 @@ h6 {
   }
 
   .frame16 .card-txt {
-    padding: 0;
+    padding: 10px;
   }
 
 
@@ -775,7 +775,7 @@ h6 {
   
   .populaires .frame16 {
     width: 100%;
-    padding: 10px;
+    padding: 20px 20px 20px 0px;
     margin: auto;
   }
 
