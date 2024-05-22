@@ -55,8 +55,7 @@ a {
 /*header*/
 
 .barre-navigation {
-  width: 1440px;
-  height: 79px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -123,7 +122,7 @@ a {
 /*info_group*/
 
 .info-group {
-  width: 1340px;
+  width: 100%;
   height: 281px;
   gap: 35px;
   margin-top: 20px;
@@ -132,7 +131,7 @@ a {
 /*headline*/
 
 .headline {
-  width: 1340px;
+  width: 100%;
   height: 53px;
 }
 
@@ -431,6 +430,7 @@ h4 {
   font-weight: 700;
   font-size: 18px;
   padding-left: 40px;
+  width: 100%;
 }
 
 .fa-solid::before {
@@ -495,7 +495,7 @@ h4 {
 /*section activités*/
 
 h6 {
-  width: 1280px;
+  width: 100%;
   height: 30.02px;
   font-size: 22px;
   font-weight: 700;
@@ -526,7 +526,7 @@ h6 {
 }
 
 .activite {
-  width: 297.5px;
+  width: 100%;
   font-stretch: normal;
   box-shadow: 0px 0px 0px 0px #0000001a;
 }
@@ -539,7 +539,7 @@ h6 {
 }
 
 .frame {
-  width: 297.5px;
+  width: 100%;
   border-radius: 0px 0px 20px 20px;
   background: #ffffff;
   display: flex;
@@ -548,17 +548,13 @@ h6 {
 }
 
 .lieux {
-  width: 297.5px;
   border-radius: 0px 0px 20px 20px;
   box-shadow: 0px 3px 15px 0px #0000001a;
 }
 
 .frame.lieux h3 {
-  width: 259.5px;
-  height: 19px;
   font-size: 16px;
   font-weight: 700;
-  line-height: 18.78px;
   text-align: left;
   padding-left: 15px;
 }
@@ -578,7 +574,7 @@ h6 {
   width: 446.67px;
   height: 163px;
   gap: 15px;
-  padding: 5px 0px 0px 20px;
+  padding: 5px 0px 0px 40px;
 }
 
 .footer-section ul {
@@ -597,10 +593,6 @@ h6 {
   padding-left: 40px;
   width: 50%;
   padding: 0;
-}
-
-footer a {
-  color: black;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -629,13 +621,7 @@ footer a {
 
   main {
     display: flex;
-    justify-content: center;
-    height: 1700px;
-  }
-
-  a {
-    color: inherit;
-    text-decoration: none;
+    justify-content: center;  
   }
 
   .section-title {
@@ -643,33 +629,9 @@ footer a {
     font-size: 22px;
   }
 
-  .card {
-    background-color: white;
-    border-radius: 20px;
-    padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  }
-
-  .card img {
-    object-fit: cover;
-  }
-
-  .card-title {
-    font-size: 16px;
-  }
-
-  .euro {
-    font-weight: 700;
-  }
-
-  .neutral-star {
-    color: var(--main-bg-color);
-  }
-
   /*header*/
   .barre-navigation {
     width: 100%;
-    height: 79px;
     padding: 0px 0.31px 0px 0px;
   }
 
@@ -681,7 +643,6 @@ footer a {
 
   .main-container {
     width: 100%;
-    height: 1893.52px;
     box-sizing: border-box;
     flex-direction: column;
     padding-left: 5%;
@@ -706,7 +667,6 @@ footer a {
   .headline h1 {
     font-size: 22px;
     font-weight: 700;
-    line-height: 25.83px;
     text-align: left;
     width: 924px;
     height: 26px;
@@ -716,8 +676,7 @@ footer a {
   .headline p {
     font-size: 16px;
     font-weight: 400;
-    line-height: 18.78px;
-    width: 924px;
+    width: 100%;
     height: 19px;
     margin-top: 8px;
   }
@@ -777,24 +736,12 @@ footer a {
     display: flex;
     flex-wrap: wrap;
   }
-
-  .hebergements .card-main {
-  }
-
-  .hebergements-title {
-    width: 924px;
-    height: 26px;
-  }
-
   .hebergements-title h3 {
-    font-size: 22px;
-    font-weight: 700;
-    padding-left: 40px;
-    text-align: left;
+    margin-bottom: 0;
   }
 
   .container-img {
-    margin-top: 40px;
+    padding: 30px;
   }
 
   .frame16 {
@@ -805,12 +752,6 @@ footer a {
     padding: 0;
   }
 
-  h4 {
-    font-weight: 700;
-    font-size: 18px;
-    width: 864px;
-    padding-left: 20px;
-  }
 
   /*populaires*/
   .populaires {
@@ -818,18 +759,29 @@ footer a {
     height: 252px;
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     border-radius: 15px 0px 0px 0px;
+  }
+
+  .populaires-title {
+    width: 100%;
+    padding-left: 20px;
+    justify-content: space-between;
+  }
+  
+  .populaires .frame16 {
+    padding: 20px;
   }
 
   .frame16 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0;
   }
 
   .frame16 .card {
-    margin-top: 20px;
+    width: 100%;
+    margin: 0;
   }
 
   .frame16 a {
@@ -847,42 +799,32 @@ footer a {
   /*section activités*/
 
   h6 {
-    width: 864px;
-    height: 30.02px;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 25.83px;
-    text-align: left;
-    color: black;
-    display: flex;
     padding-left: 20px;
     margin-bottom: 15px;
   }
 
-  .section-activité {
-    width: 924px;
-    height: 390.02px;
+  .section-activite {
+    width: 100%;
     padding: 30px 0px 0px 0px;
     gap: 30px;
   }
 
-  .Activités-à-Marseille {
+  .activites-a-marseille {
     width: 100%;
-    height: 390.02px;
+    height: auto;
   }
 
   .frame14 {
-    width: 864px;
-    height: 290px;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     gap: 30px;
     margin: 0;
-    padding: 25px;
     margin-top: -20px;
   }
 
-  .activité {
+  .activite {
     width: 193.5px;
     height: 290px;
     border-radius: 20px 0px 0px 0px;
@@ -934,10 +876,9 @@ footer a {
   /*footer*/
 
   .footer {
-    width: 924px;
-    height: 163px;
+    width: 100%;
     gap: 30px;
-    margin-left: 5%;
+    margin-left: 20px;
     margin-top: 80px;
   }
 
@@ -1000,7 +941,6 @@ footer a {
 
   body {
     width: 375px;
-    height: 4058.02px;
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -1249,16 +1189,19 @@ footer a {
   /*populaires*/
   .populaires {
     width: 100%;
+    height: 569px;
     order: 1;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     border-radius: 0;
   }
 
   .populaires-title {
     width: 100%;
     height: 26px;
+    padding: 0;
   }
 
   .populaires .frame16 {
@@ -1266,6 +1209,7 @@ footer a {
     flex-direction: column;
     gap: 20px;
     padding: 0;
+    margin-top: -30px;
   }
 
   .frame16 a {
@@ -1389,19 +1333,16 @@ footer a {
   /*section activités*/
 
   h6 {
-    width: 315px;
-    height: 30.02px;
-    padding-left: 20px;
+   padding: 0;
   }
 
-  .section-activité {
+  .section-activite {
     width: 375px;
     padding: 20px;
   }
 
-  .Activités-à-Marseille {
-    width: 375px;
-    height: 965.02px;
+  .activites-a-marseille {
+    width: 100%;
     gap: 30px;
   }
 
@@ -1411,10 +1352,9 @@ footer a {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding-left: 30px;
   }
 
-  .activité {
+  .activite {
     width: 315px;
     height: 200px;
     border-radius: 20px;
@@ -1461,10 +1401,7 @@ footer a {
     display: flex;
     flex-direction: column;
     width: 100%;
-    list-style: none;
-    font-size: 16px;
-    justify-content: center;
-    background-color: #f2f2f2;
+    margin-top: 60px;
     gap: 30px;
   }
 
