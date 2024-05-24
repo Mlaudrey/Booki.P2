@@ -378,7 +378,7 @@ i.mon-icon.fa-solid::before {
   border-radius: 20px;
   background: #ffffff;
   box-shadow: 0px 3px 15px 0px #0000001a;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .card-main:hover {
@@ -428,7 +428,7 @@ p.card-subtitle .card-rating {
 h4 {
   font-weight: 700;
   font-size: 18px;
-  padding-left: 40px;
+  padding-left: 20px;
   width: 100%;
 }
 
@@ -451,7 +451,7 @@ h4 {
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
-  gap: 90px;
+  gap: 70px;
   margin-bottom: 20px;
 
 }
@@ -467,7 +467,7 @@ h4 {
 .frame16 .card {
   width: 80%;
   display: flex;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .frame16 .card:hover {
@@ -508,13 +508,14 @@ h4 {
 /*section activités*/
 
 h6 {
-  width: 100%;
+  width: 80%;
   font-size: 22px;
   font-weight: 700;
   text-align: left;
   color: black;
   display: flex;
   margin-bottom: 15px;
+  padding-left: 20px;
 }
 
 .section-activite {
@@ -522,7 +523,7 @@ h6 {
 }
 
 .frame14 {
-  width: 100%;
+  width: 96%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -536,7 +537,7 @@ h6 {
   box-shadow: 0px 0px 0px 0px #0000001a;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: end;
   flex-direction: column;
 }
 
@@ -547,14 +548,14 @@ h6 {
 }
 
 .frame14 img {
-  width: 297.5px;
+  width: 90%;
   height: 380px;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
 .frame {
-  width: 87.5%;
+  width: 90%;
   border-radius: 0px 0px 20px 20px;
   background: #ffffff;
   display: flex;
