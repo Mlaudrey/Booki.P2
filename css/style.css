@@ -247,14 +247,13 @@ a {
 /*filterbar*/
 
 .filterbar {
-  width: 820px;
+  width: 100%;
   height: 50px;
   gap: 15px;
   background: white;
   border: 1px solid transparent;
   margin-top: 35px;
   display: flex;
-  justify-content: space-between;
   text-align: center;
 }
 
@@ -354,7 +353,7 @@ i.mon-icon.fa-solid::before {
   font-size: 22px;
   font-weight: 700;
   padding-left: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 
 .hebergements {
@@ -441,7 +440,6 @@ h4 {
 /****** Populaires ***********/
 .populaires {
   width: 32%;
-  height: 614px;
   background-color: #f2f2f2;
   border-radius: 15px;
   display: flex;
@@ -454,17 +452,17 @@ h4 {
   align-items: center;
   padding-top: 20px;
   gap: 70px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 
 }
 
 .populaires .frame16 {
-  gap: 30px;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .frame16 .card {
@@ -526,11 +524,10 @@ h6 {
 }
 
 .frame14 {
-  width: 96%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: -30px;
   padding-top: 20px;
 }
 
@@ -540,7 +537,7 @@ h6 {
   box-shadow: 0px 0px 0px 0px #0000001a;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -591,13 +588,11 @@ h6 {
 }
 
 .footer-section {
-  width: 446.67px;
-  height: 163px;
-  gap: 15px;
-  padding: 5px 
+  width: 100%;
 }
 
 .footer-section ul {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -808,47 +803,24 @@ h6 {
 
   .footer {
     width: 100%;
-    gap: 30px;
-    margin-left: 20px;
     margin-top: 80px;
   }
 
   .footer-section {
     display: flex;
     flex-direction: column;
-    row-gap: 15px;
-    width: 439.67px;
-    height: 163px;
+    padding: 0;
   }
 
   .footer-section ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    row-gap: 15px;
-    list-style-type: none;
+    width:80%;
     margin: 0;
   }
 
   .footer-section h3 {
     font-weight: bold;
     font-size: 18px;
-    width: 50%;
-  }
-
-  .footer-section {
-    display: flex;
-    flex-direction: column;
-    width: 288px;
-    height: 163px;
-    gap: 15px;
-    padding-left: 5%;
-  }
-
-  .a-propos {
-    width: 446.67px;
-    height: 163px;
-    gap: 15px;
+    width: 70%;
   }
 }
 
@@ -858,13 +830,6 @@ h6 {
   * {
     font-family: "Raleway", sans-serif;
     text-decoration: none;
-  }
-
-  body {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
   }
 
   main {
@@ -909,7 +874,7 @@ h6 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin-top: 20px;
   }
 
   .liens {
@@ -920,7 +885,7 @@ h6 {
   }
 
   .barre-navigation .bordure {
-    width: 187.5px;
+    width: 100%;
     border: 2px solid transparent;
     transition: border-color 0.3s;
     display: flex;
@@ -937,34 +902,26 @@ h6 {
   /*info-group*/
 
   .info-group {
-    width: 100%;
-    gap: 35px;
-    display: block;
-    justify-content: center;
     margin: 0;
   }
 
-  .headline h1 {
+  .headline{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .headline h1 {
+    margin: 0;
   }
 
   /*search-bar*/
 
   .search-bar {
     width: 100%;
-    border-radius: 15px;
-    border: 1px solid #f2f2f2;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
   }
 
   .input-search {
-    width: 236px;
-    height: 21px;
-    top: 14px;
-    border: none;
+    width: 100%;
   }
 
   ::placeholder {
@@ -1003,11 +960,8 @@ h6 {
 
   .filterbar {
     width: 100%;
-    background: white;
-    border: 1px solid transparent;
-    margin-top: 35px;
-    display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    height:100%;
   }
 
   .filters {
@@ -1025,13 +979,13 @@ h6 {
   }
 
   .filterbar .babyfiltre {
-    width: 48%;
+    width: 45%;
     height: 50px;
     border-radius: 25px;
   }
 
   .infobar {
-    width: 335px;
+    width: 100%;
     height: 38px;
     gap: 10px;
   }
@@ -1080,30 +1034,20 @@ h6 {
 
   .populaires-title {
     width: 100%;
-    padding: 0;
   }
 
   .populaires .frame16 {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    margin-top: -80px;
+    width:100%;
+    gap: 20px; 
+  }
+ 
+  .frame16 .card {
+    margin: 0;
+    width: 90%;
   }
 
-  .frame16 a {
+  .frame16 .section-title {
     width: 100%;
-    border-radius: 20px;
-    display: flex;
-  }
-
-  .frame16 .card-title {
-    font-size: 14px;
-    display: flex;
-  }
-
-  .frame16 .card-subtitle {
-    font-size: 13px;
   }
 
   /*hebergements*/
@@ -1135,20 +1079,13 @@ h6 {
   }
 
   .hebergements .card-main {
-    width: 335px;
-    border-radius: 20px;
-    background: #ffffff;
-    box-shadow: 0px 3px 15px 0px #0000001a;
+    width: 90%;
     gap: 4px;
   }
 
   .card-main img {
-    width: 97%;
-    border-radius: 20px 20px 0px 0px;
-    border: 5px solid #ffffff;
-    display: flex;
-    justify-content: space-between;
-    object-fit: cover;
+    width: 98%;
+    justify-content: center;
   }
 
   .hebergements .frame16 {
@@ -1194,9 +1131,7 @@ h6 {
   }
 
   h4 {
-    font-weight: 700;
-    font-size: 18px;
-    margin: 0;
+    margin-top: 10px;
     padding-left: 20px;
   }
 
