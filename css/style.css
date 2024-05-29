@@ -821,14 +821,15 @@ h6 {
     gap: 35px;
     display: flex;
     flex-direction: column;
-    padding-left:10px;
+    padding-left: 0px;
+    justify-content: center;
   }
 
   /*header*/
 
   .barre-navigation {
     flex-direction: column;
-    padding-left: 10px;
+    padding-left: 4%;
   }
 
   .logo {
@@ -840,6 +841,7 @@ h6 {
 
   .liens {
     width: 95%;
+    height: 60px;
   }
 
   .barre-navigation .bordure {
@@ -861,7 +863,8 @@ h6 {
 
   .info-group {
     margin: 0;
-    width: 96%;
+    width: 91%;
+    padding-left: 1%;
   }
 
   .headline{
@@ -871,7 +874,7 @@ h6 {
   
   .headline h1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .headline p {
@@ -881,24 +884,41 @@ h6 {
 
   /*search-bar*/
 
-  .search-bar {
-    width: 100%;
-    margin-top: 20px;
+  main form {
+    display: flex;
+    width:86%;
+  }
+  
+  .group15{
+    width: 44px;
   }
 
-  .input-search {
-    width: 100%;
+  .search-bar {
+    width: 88%;
+    margin-top: 20px;
+    border:none;
+    padding-left: 0;
+  }
+  
+  .input-search{
+    border: 1px solid #f2f2f2;
+    border-right: none;
+    width:100%;
+  }
+
+  .input-search::placeholder {
+    padding: 1%;
+    font-size: 14px;
   }
 
   ::placeholder {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 21.13px;
     padding-left: 24px;
   }
 
   .buttonsearch {
-    width: 49px;
+    width: 40px;
     height: 51px;
     border-radius: 15px;
     border: 1px;
@@ -906,11 +926,10 @@ h6 {
 
   #searchbutton {
     color: transparent;
-    text-shadow: none;
     width: 49px;
     height: 51px;
     border-radius: 15px;
-    border: 1px;
+    
   }
 
   #searchbutton::before {
@@ -928,7 +947,6 @@ h6 {
     width: 100%;
     flex-direction: column;
     height:100%;
-    font-size: 15px;
   }
 
   .filters {
@@ -938,22 +956,25 @@ h6 {
     gap: 5px;
     justify-content: center;
     align-items: center;
+    padding-left: 8%;
   }
 
   h2 {
     width: 54px;
-    height: 21px;
+    height: 19px;
   }
 
   .filterbar .babyfiltre {
-    width: 45%;
+    width: 46%;
     height: 50px;
-    border-radius: 25px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
   }
 
   .infobar {
     width: 100%;
-    font-size: 13px;
+    font-size: 12px;
     gap: 10px;
   }
 
@@ -978,14 +999,9 @@ h6 {
   .hebergements-and-populaires {
     display: flex;
     flex-direction: column;
-    width: 96%;
     gap: 15px;
     margin: 0;
-  }
-
-  .hebergements-and-populaires section {
-    border-radius: 20px;
-    box-sizing: border-box;
+    padding-left: 1%;
   }
 
   /*populaires*/
@@ -1001,17 +1017,16 @@ h6 {
   }
 
   .populaires-title {
-    width: 90%;
+    width: 95%;
     justify-content: space-between;
-    font-size: 19px;
   }
  .section-title{
-    font-size: 18px;
+    font-size: 20px;
  }
 
   .populaires .frame16 {
-    width:100%;
     gap: 20px; 
+    width:100%
   }
  
   .frame16 .card {
@@ -1039,33 +1054,31 @@ h6 {
   }
 
   .hebergements-title h3 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    padding-left: 10px;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
   }
 
   .container-img {
-    width: 100%;
-    gap: 20px;
-    margin-top: -20px;
+    margin-top: -20px;  
   }
 
   .hebergements .card-main {
-    width: 90%;
+    width: 98%;
     gap: 4px;
+    padding-left: 1%;
   }
 
   .card-main img {
-    width: 96%;
+    width: 98%;
     justify-content: center;
   }
 
   .hebergements .frame16 {
-    width: 90%;
-    height: 64.25px;
-    gap: 8px;
     padding: 0px 0px 0px 15px;
+    width:95%;
   }
 
   .frame16 .card {
@@ -1073,29 +1086,19 @@ h6 {
   }
 
   .frame16 .card-txt {
-    font-size: 16px;
     padding: 0;
-    display: flex;
     flex-wrap: wrap;
+    width:80%;
+    margin-bottom: 5px;
   }
-
-  .hebergements .frame16 .card-title {
-    font-weight: 700;
-    line-height: 18.78px;
-    width: 235px;
-    height: 19px;
-    font-size: 16px;
-    margin: 0;
-  }
-
 
   .frame16 .card-rating {
     margin: 0;
   }
 
   h4 {
-    margin-top: 10px;
-    padding-left: 20px;
+    margin-top: 5px;
+    padding-left: 10px;
     font-size: 16px;
   }
 
@@ -1110,6 +1113,10 @@ h6 {
     padding: 0px 0px 20px 20px;
     margin-top: 0;
     font-size: 18px;
+  }
+
+  .activite {
+    padding-left: 3%;
   }
 
   .frame14 {
@@ -1142,9 +1149,9 @@ h6 {
   .footer {
     display: flex;
     flex-direction: column;
-    width: 92%;
+    width: 97%;
     gap: 30px;
-    margin-left:10px;
+    margin-left: 1.5%;
   }
 
    .footer-section {
