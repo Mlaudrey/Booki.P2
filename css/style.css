@@ -863,8 +863,8 @@ h6 {
 
   .info-group {
     margin: 0;
-    width: 91%;
-    padding-left: 1%;
+    width: 88%;
+    padding-left:15px;
   }
 
   .headline{
@@ -886,7 +886,7 @@ h6 {
 
   main form {
     display: flex;
-    width:86%;
+    width:84%;
   }
   
   .group15{
@@ -908,7 +908,7 @@ h6 {
 
   .input-search::placeholder {
     padding: 1%;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   ::placeholder {
@@ -956,7 +956,6 @@ h6 {
     gap: 5px;
     justify-content: center;
     align-items: center;
-    padding-left: 8%;
   }
 
   h2 {
@@ -1001,7 +1000,6 @@ h6 {
     flex-direction: column;
     gap: 15px;
     margin: 0;
-    padding-left: 1%;
   }
 
   /*populaires*/
@@ -1010,14 +1008,13 @@ h6 {
     width: 100%;
     order: 1;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border-radius: 0;
   }
 
   .populaires-title {
-    width: 95%;
+    width: 92%;
     justify-content: space-between;
   }
  .section-title{
@@ -1031,7 +1028,7 @@ h6 {
  
   .frame16 .card {
     margin: 0;
-    width: 90%;
+    width: 88%;
   }
 
   .frame16 .section-title {
@@ -1051,24 +1048,26 @@ h6 {
   .hebergements-and-populaires .hebergements {
     background-color: transparent;
     padding: 0;
+    
   }
 
   .hebergements-title h3 {
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 15px;
     display: flex;
-    align-items: center;
     margin-bottom: 20px;
   }
 
   .container-img {
-    margin-top: -20px;  
+    margin-top: -20px; 
+    width:100%; 
+    display: flex;
+    justify-content: center;
   }
 
   .hebergements .card-main {
-    width: 98%;
+    width: 89%;
     gap: 4px;
-    padding-left: 1%;
   }
 
   .card-main img {
@@ -1077,16 +1076,10 @@ h6 {
   }
 
   .hebergements .frame16 {
-    padding: 0px 0px 0px 15px;
     width:95%;
   }
 
-  .frame16 .card {
-    margin: 0;
-  }
-
   .frame16 .card-txt {
-    padding: 0;
     flex-wrap: wrap;
     width:80%;
     margin-bottom: 5px;
@@ -1098,7 +1091,7 @@ h6 {
 
   h4 {
     margin-top: 5px;
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: 16px;
   }
 
@@ -1110,7 +1103,7 @@ h6 {
   /*section activités*/
 
   h6 {
-    padding: 0px 0px 20px 20px;
+    padding: 0px 0px 20px 15px;
     margin-top: 0;
     font-size: 18px;
   }
